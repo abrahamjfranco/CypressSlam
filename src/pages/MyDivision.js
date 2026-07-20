@@ -85,3 +85,7 @@ export default function MyDivision({ divisions, players }) {
       )}
       {divisions.length === 0 && (
         <div className="loading">No divisions set up yet. Check back soon!</div>
+      )}
+    </div>
+  );
+}
