@@ -1,4 +1,4 @@
-const BASE_ID = 'appniAQEclhJxIyeO';
+const BASE_ID = 'appsSBAwV7tXj0lN2';
 const API_KEY = 'pat4pPXzSiHXGsIdQ.b85d1355740455b2dafce4f7135063a8d760335216cbcdae1a780b22a178e763';
 const BASE_URL = `https://api.airtable.com/v0/${BASE_ID}`;
 
@@ -26,7 +26,8 @@ export async function getPlayers() {
     totalGamesGivenUp: r.fields['Total Games Given Up'] || 0,
     madePlayoffs: r.fields['Made Playoffs'] || false,
     madeSemifinals: r.fields['Made Semifinals'] || false,
-    court: r.fields['Address (from Address (from Playoff Court))']?.[0] || '',
+    madeFinals: r.fields['Made Finals'] || false,
+    court: r.fields['Address (from Playoff Court)']?.[0] || '',
     qfGame: r.fields['Quarterfinals Game'] || '',
     sfGame: r.fields['Semifinals Game'] || '',
   }));
